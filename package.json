@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "nyc mocha",
-    "linter": "eslint ./ --fix"
+    "linter": "eslint ./ --fix",
+    "report": "nyc report --reporter=html"
   },
   "repository": {
     "type": "git",

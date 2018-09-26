@@ -25,10 +25,10 @@ describe('Calculator', () => {
     });
 
     it ('should throw an error if the sum argument is not a number', () => {
-        expect(function() { instance.add('1', 2) }).to.throw(TypeError);
+        expect(function() { instance.add('1', 2) }).to.throw(TypeError, '[1] is not a number!');
     });
 
     it ('should throw an error if the mult argument is not a number', () => {
-        expect(function() { instance.multiply('1', 2) }).to.throw(TypeError);
+        expect(function() { instance.multiply('1', 2) }).to.throw(TypeError, '[1] is not a number!');
     });
 })
