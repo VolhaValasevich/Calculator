@@ -17,18 +17,18 @@ describe('Calculator', () => {
     });
 
     it ('should calculate the sum of argumens', () => {
-        expect(instance.sum(1, 2)).to.be.equal(3);
+        expect(instance.add(1, 2)).to.be.equal(3);
     });
 
     it ('should multiply the arguments', () => {
-        expect(instance.mult(3, 2)).to.be.equal(6);
+        expect(instance.multiply(3, 2)).to.be.equal(6);
     });
 
     it ('should throw an error if the sum argument is not a number', () => {
-        expect(function() { instance.sum('1', 2) }).to.throw(TypeError);
+        expect(function() { instance.add('1', 2) }).to.throw(TypeError);
     });
 
     it ('should throw an error if the mult argument is not a number', () => {
-        expect(function() { instance.mult('1', 2) }).to.throw(TypeError);
+        expect(function() { instance.multiply('1', 2) }).to.throw(TypeError);
     });
 })

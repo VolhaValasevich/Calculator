@@ -10,7 +10,7 @@ class Calculator {
         });
     }
 
-    sum(...args) {
+    add(...args) {
         this.checkArgs(args);
         this.result = 0;
         args.forEach((arg) => {
@@ -19,7 +19,7 @@ class Calculator {
         return this.result;
     }
 
-    mult(...args) {
+    multiply(...args) {
         this.checkArgs(args);
         this.result = 1;
         args.forEach((arg) => {
