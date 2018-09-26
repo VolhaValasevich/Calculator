@@ -9,8 +9,7 @@ const execSync = require('child_process').execSync;
 
 
 const sources = [
-    'index.js',
-    'lib/**/*.js'
+    'src/*.js'
 ];
 
 const testSources = [
