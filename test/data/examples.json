@@ -1,0 +1,438 @@
+{
+    "properties": {
+        "app_name": "App",
+        "[web]": null,
+        "hostname": "10.10.10.20",
+        "port": 4321,
+        "[db]": null
+    },
+    "csv": [
+        {
+            "one": "1",
+            "two": "2",
+            "three": "3"
+        },
+        {
+            "one": "4",
+            "two": "5",
+            "three": "6"
+        },
+        {
+            "one": "7",
+            "two": "8",
+            "three": "9"
+        }
+    ],
+    "json": {
+        "positive": [
+            {
+                "args": [
+                    2,
+                    3
+                ],
+                "sum": 5,
+                "mult": 6
+            },
+            {
+                "args": [
+                    -2,
+                    3
+                ],
+                "sum": 1,
+                "mult": -6
+            },
+            {
+                "args": [
+                    0,
+                    5
+                ],
+                "sum": 5,
+                "mult": 0
+            },
+            {
+                "args": [
+                    0.5,
+                    3
+                ],
+                "sum": 3.5,
+                "mult": 1.5
+            },
+            {
+                "args": [
+                    2,
+                    3,
+                    4
+                ],
+                "sum": 9,
+                "mult": 24
+            },
+            {
+                "args": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "sum": 20,
+                "mult": 720
+            },
+            {
+                "args": [
+                    1,
+                    -5,
+                    -3.3,
+                    6,
+                    -11,
+                    0.78
+                ],
+                "sum": -11.52,
+                "mult": -849.42
+            }
+        ],
+        "negative": [
+            {
+                "args": [],
+                "errorMessage": "No numbers were entered!"
+            },
+            {
+                "args": [
+                    1,
+                    "str"
+                ],
+                "errorMessage": "[str] is not a number!"
+            },
+            {
+                "args": [
+                    "str",
+                    2
+                ],
+                "errorMessage": "[str] is not a number!"
+            },
+            {
+                "args": [
+                    3,
+                    "str",
+                    2
+                ],
+                "errorMessage": "[str] is not a number!"
+            },
+            {
+                "args": [
+                    "undefined",
+                    2
+                ],
+                "errorMessage": "[undefined] is not a number!"
+            },
+            {
+                "args": [
+                    "NaN",
+                    2
+                ],
+                "errorMessage": "[NaN] is not a number!"
+            }
+        ]
+    },
+    "xlsx": {
+        "Directory": {
+            "workbooks": [
+                "/xl/workbook.xml"
+            ],
+            "sheets": [
+                "/xl/worksheets/sheet1.xml"
+            ],
+            "charts": [],
+            "dialogs": [],
+            "macros": [],
+            "rels": [],
+            "strs": [],
+            "comments": [],
+            "links": [],
+            "coreprops": [
+                "/docProps/core.xml"
+            ],
+            "extprops": [
+                "/docProps/app.xml"
+            ],
+            "custprops": [],
+            "themes": [
+                "/xl/theme/theme1.xml"
+            ],
+            "styles": [
+                "/xl/styles.xml"
+            ],
+            "vba": [],
+            "drawings": [],
+            "TODO": [],
+            "xmlns": "http://schemas.openxmlformats.org/package/2006/content-types",
+            "calcchain": "",
+            "sst": "",
+            "style": "/xl/styles.xml",
+            "defaults": {
+                "rels": "application/vnd.openxmlformats-package.relationships+xml",
+                "xml": "application/xml"
+            }
+        },
+        "Workbook": {
+            "AppVersion": {
+                "appName": "xl",
+                "appname": "xl",
+                "lastEdited": "7",
+                "lastedited": "7",
+                "lowestEdited": "6",
+                "lowestedited": "6",
+                "rupBuild": "20730",
+                "rupbuild": "20730"
+            },
+            "WBProps": {
+                "filterPrivacy": true,
+                "allowRefreshQuery": false,
+                "autoCompressPictures": true,
+                "backupFile": false,
+                "checkCompatibility": false,
+                "CodeName": "",
+                "date1904": false,
+                "defaultThemeVersion": 0,
+                "hidePivotFieldList": false,
+                "promptedSolutions": false,
+                "publishItems": false,
+                "refreshAllConnections": false,
+                "saveExternalLinkValues": true,
+                "showBorderUnselectedTables": true,
+                "showInkAnnotation": true,
+                "showObjects": "all",
+                "showPivotChartFilter": false,
+                "updateLinks": "userSet"
+            },
+            "WBView": [
+                {
+                    "xWindow": "0",
+                    "xwindow": "0",
+                    "yWindow": "0",
+                    "ywindow": "0",
+                    "windowWidth": "22260",
+                    "windowwidth": "22260",
+                    "windowHeight": "12645",
+                    "windowheight": "12645",
+                    "uid": "{00000000-000D-0000-FFFF-FFFF00000000}",
+                    "activeTab": 0,
+                    "autoFilterDateGrouping": true,
+                    "firstSheet": 0,
+                    "minimized": false,
+                    "showHorizontalScroll": true,
+                    "showSheetTabs": true,
+                    "showVerticalScroll": true,
+                    "tabRatio": 600,
+                    "visibility": "visible"
+                }
+            ],
+            "Sheets": [
+                {
+                    "name": "Sheet1",
+                    "sheetId": "1",
+                    "sheetid": "1",
+                    "id": "rId1",
+                    "Hidden": 0
+                }
+            ],
+            "CalcPr": {
+                "calcId": "162913",
+                "calcid": "162913",
+                "calcCompleted": "true",
+                "calcMode": "auto",
+                "calcOnSave": "true",
+                "concurrentCalc": "true",
+                "fullCalcOnLoad": "false",
+                "fullPrecision": "true",
+                "iterate": "false",
+                "iterateCount": "100",
+                "iterateDelta": "0.001",
+                "refMode": "A1"
+            },
+            "Names": [],
+            "xmlns": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+        },
+        "Props": {
+            "LastAuthor": "",
+            "Author": "",
+            "CreatedDate": "2015-06-05T18:17:20.000Z",
+            "ModifiedDate": "2018-09-27T11:34:36.000Z",
+            "Application": "Microsoft Excel",
+            "AppVersion": "16.0300",
+            "Company": "",
+            "DocSecurity": "0",
+            "HyperlinksChanged": false,
+            "SharedDoc": false,
+            "LinksUpToDate": false,
+            "ScaleCrop": false,
+            "Worksheets": 1,
+            "SheetNames": [
+                "Sheet1"
+            ]
+        },
+        "Custprops": {},
+        "Deps": {},
+        "Sheets": {
+            "Sheet1": {
+                "!ref": "A1:E2",
+                "A1": {
+                    "t": "n",
+                    "v": 1,
+                    "w": "1"
+                },
+                "B1": {
+                    "t": "n",
+                    "v": 2,
+                    "w": "2"
+                },
+                "C1": {
+                    "t": "n",
+                    "v": 3,
+                    "w": "3"
+                },
+                "D1": {
+                    "t": "n",
+                    "v": 4,
+                    "w": "4"
+                },
+                "E1": {
+                    "t": "n",
+                    "v": 5,
+                    "w": "5"
+                },
+                "A2": {
+                    "t": "n",
+                    "v": 10,
+                    "w": "10"
+                },
+                "B2": {
+                    "t": "n",
+                    "v": 9,
+                    "w": "9"
+                },
+                "C2": {
+                    "t": "n",
+                    "v": 8,
+                    "w": "8"
+                },
+                "D2": {
+                    "t": "n",
+                    "v": 7,
+                    "w": "7"
+                },
+                "E2": {
+                    "t": "n",
+                    "v": 6,
+                    "w": "6"
+                },
+                "!margins": {
+                    "left": 0.7,
+                    "right": 0.7,
+                    "top": 0.75,
+                    "bottom": 0.75,
+                    "header": 0.3,
+                    "footer": 0.3
+                }
+            }
+        },
+        "SheetNames": [
+            "Sheet1"
+        ],
+        "Strings": [],
+        "Styles": {
+            "Fonts": [
+                {
+                    "sz": 11,
+                    "color": {
+                        "theme": 1
+                    },
+                    "name": "Calibri",
+                    "family": 2,
+                    "scheme": "minor"
+                }
+            ],
+            "Fills": [
+                {
+                    "patternType": "none"
+                },
+                {
+                    "patternType": "gray125"
+                }
+            ],
+            "Borders": [
+                {}
+            ],
+            "CellXf": [
+                {
+                    "numFmtId": 0,
+                    "numfmtid": "0",
+                    "fontId": 0,
+                    "fontid": "0",
+                    "fillId": 0,
+                    "fillid": "0",
+                    "borderId": 0,
+                    "borderid": "0",
+                    "xfId": 0,
+                    "xfid": "0"
+                }
+            ]
+        },
+        "Themes": {},
+        "SSF": {
+            "0": "General",
+            "1": "0",
+            "2": "0.00",
+            "3": "#,##0",
+            "4": "#,##0.00",
+            "9": "0%",
+            "10": "0.00%",
+            "11": "0.00E+00",
+            "12": "# ?/?",
+            "13": "# ??/??",
+            "14": "m/d/yy",
+            "15": "d-mmm-yy",
+            "16": "d-mmm",
+            "17": "mmm-yy",
+            "18": "h:mm AM/PM",
+            "19": "h:mm:ss AM/PM",
+            "20": "h:mm",
+            "21": "h:mm:ss",
+            "22": "m/d/yy h:mm",
+            "37": "#,##0 ;(#,##0)",
+            "38": "#,##0 ;[Red](#,##0)",
+            "39": "#,##0.00;(#,##0.00)",
+            "40": "#,##0.00;[Red](#,##0.00)",
+            "45": "mm:ss",
+            "46": "[h]:mm:ss",
+            "47": "mmss.0",
+            "48": "##0.0E+0",
+            "49": "@",
+            "56": "\"上午/下午 \"hh\"時\"mm\"分\"ss\"秒 \"",
+            "65535": "General"
+        }
+    },
+    "yml": [
+        {
+            "martin": {
+                "name": "Martin D'vloper",
+                "job": "Developer",
+                "skills": [
+                    "python",
+                    "perl",
+                    "pascal"
+                ]
+            }
+        },
+        {
+            "tabitha": {
+                "name": "Tabitha Bitumen",
+                "job": "Developer",
+                "skills": [
+                    "lisp",
+                    "fortran",
+                    "erlang"
+                ]
+            }
+        }
+    ]
+}
