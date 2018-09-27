@@ -5,6 +5,7 @@ class Calculator {
     }
 
     checkArgs(args) {
+        if (args.length < 1) throw new Error('No numbers were entered!');
         args.forEach((arg) => {
             if (typeof arg !== 'number') throw new TypeError(`[${arg}] is not a number!`);
         });
