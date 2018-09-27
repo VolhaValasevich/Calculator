@@ -39,32 +39,26 @@
     "negative": [
         {
             "args": [],
-            "errorType": "Error",
             "errorMessage": "No numbers were entered!"
         },
         {
             "args": [1, "str"],
-            "errorType": "TypeError",
             "errorMessage": "[str] is not a number!"
         },
         {
             "args": ["str", 2],
-            "errorType": "TypeError",
             "errorMessage": "[str] is not a number!"
         },
         {
             "args": [3, "str", 2],
-            "errorType": "TypeError",
             "errorMessage": "[str] is not a number!"
         },
         {
             "args": ["undefined", 2],
-            "errorType": "TypeError",
             "errorMessage": "[undefined] is not a number!"
         },
         {
             "args": ["NaN", 2],
-            "errorType": "TypeError",
             "errorMessage": "[NaN] is not a number!"
         }
     ]
