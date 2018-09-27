@@ -1,12 +1,71 @@
 {
     "positive": [
         {
-
+            "args": [2, 3],
+            "sum": 5,
+            "mult": 6
+        },
+        {
+            "args": [-2, 3],
+            "sum": 1,
+            "mult": -6
+        },
+        {
+            "args": [0, 5],
+            "sum": 5,
+            "mult": 0
+        },
+        {
+            "args": [0.5, 3],
+            "sum": 3.5,
+            "mult": 1.5
+        },
+        {
+            "args": [2, 3, 4],
+            "sum": 9,
+            "mult": 24
+        },
+        {
+            "args": [2, 3, 4, 5, 6],
+            "sum": 20,
+            "mult": 720
+        },
+        {
+            "args": [1, -5, -3.3, 6, -11, 0.78],
+            "sum": -11.52,
+            "mult": -849.42
         }
     ],
     "negative": [
         {
-            
+            "args": [],
+            "errorType": "Error",
+            "errorMessage": "No numbers were entered!"
+        },
+        {
+            "args": [1, "str"],
+            "errorType": "TypeError",
+            "errorMessage": "[str] is not a number!"
+        },
+        {
+            "args": ["str", 2],
+            "errorType": "TypeError",
+            "errorMessage": "[str] is not a number!"
+        },
+        {
+            "args": [3, "str", 2],
+            "errorType": "TypeError",
+            "errorMessage": "[str] is not a number!"
+        },
+        {
+            "args": ["undefined", 2],
+            "errorType": "TypeError",
+            "errorMessage": "[undefined] is not a number!"
+        },
+        {
+            "args": ["NaN", 2],
+            "errorType": "TypeError",
+            "errorMessage": "[NaN] is not a number!"
         }
     ]
 }

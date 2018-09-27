@@ -18,33 +18,31 @@ describe('Calculator', () => {
         instance = null;
     });
 
-    it ('should calculate the sum of argumens', () => {
-        expect(instance.add(1, 2)).to.be.equal(3);
-        expect(spyAdd).to.have.been.called.once;
-    });
+    testData.positive.forEach((data) => {
+        it('should calculate the sum of argumens', () => {
+            expect(instance.add(...data.args)).to.be.equal(data.sum);
+            expect(spyAdd).to.have.been.called.once;
+            expect(spyAdd).to.have.been.called.with(...data.args);
+        });
 
-    it ('should multiply the arguments', () => {
-        expect(instance.multiply(3, 2)).to.be.equal(6);
-        expect(spyMult).to.have.been.called.once;
-    });
+        it('should multiply the arguments', () => {
+            expect(instance.multiply(...data.args)).to.be.equal(data.mult);
+            expect(spyMult).to.have.been.called.once;
+            expect(spyMult).to.have.been.called.with(...data.args);
+        });
+    })
 
-    it ('should throw an error if no arguments were entered for summing', () => {
-        expect(function() { instance.add() }).to.throw(Error, 'No numbers were entered!');
-        expect(spyAdd).to.have.been.called.once;
-    });
+    testData.negative.forEach((data) => {
+        it('should throw an error in sum', () => {
+            expect(function () { instance.add(...data.args) }).to.throw(TypeError, data.errorMessage);
+            expect(spyAdd).to.have.been.called.once;
+            expect(spyAdd).to.have.been.called.with(...data.args);
+        });
 
-    it ('should throw an error if no arguments were entered for multuplying', () => {
-        expect(function() { instance.multiply() }).to.throw(Error, 'No numbers were entered!');
-        expect(spyMult).to.have.been.called.once;
-    });
-
-    it ('should throw an error if the sum argument is not a number', () => {
-        expect(function() { instance.add('1', 2) }).to.throw(TypeError, '[1] is not a number!');
-        expect(spyAdd).to.have.been.called.once;
-    });
-
-    it ('should throw an error if the mult argument is not a number', () => {
-        expect(function() { instance.multiply('1', 2) }).to.throw(TypeError, '[1] is not a number!');
-        expect(spyMult).to.have.been.called.once;
-    });
+        it('should throw an error in mult', () => {
+            expect(function () { instance.multiply(...data.args) }).to.throw(TypeError, data.errorMessage);
+            expect(spyMult).to.have.been.called.once;
+            expect(spyMult).to.have.been.called.with(...data.args);
+        });
+    })
 })
