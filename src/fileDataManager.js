@@ -24,7 +24,6 @@ class fileDataManager {
     loadPropertiesFile(fileName) {
         return new Promise (function (resolve, reject) { 
             properties.parse(path.resolve(fileName), { path: true }, (err, data) => {
-                if (err) reject(err);
                 resolve(data);
             })
         })
@@ -33,7 +32,6 @@ class fileDataManager {
     loadCsvFile(fileName) {
         return new Promise (function (resolve, reject) { 
             csv.mapFile(path.resolve(fileName), (err, data) => {
-                if (err) reject(err);
                 resolve(data);
             })
         })
