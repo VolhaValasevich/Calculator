@@ -9,7 +9,7 @@
   "scripts": {
     "test": "nyc mocha",
     "linter": "eslint ./ --fix",
-    "report": "nyc report --reporter=html"
+    "posttest": "nyc report --reporter=html"
   },
   "repository": {
     "type": "git",
