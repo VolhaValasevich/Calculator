@@ -1,7 +1,7 @@
 # Calculator
 A simple calculator with unit tests
 
-## Installaton
+## Installation
 
 ```
 npm install
